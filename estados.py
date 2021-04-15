@@ -6,7 +6,7 @@ Esse módulo tem como finalidade armazenar e retornar os estados referentes a qu
 
 """
 # Grupo: Ana Carolina Erthal Fernandes, Eduardo Adame Salles, Murilo Calegari de Souza, Tiago Barradas Figueiredo, Rodrigo Gomes Hutz Pintucci e Vinícius Hedler
-# Documentação Sphinx: https://graficoforcaascii.readthedocs.io/en/latest/
+# Documentação Sphinx: http://graficoforcaascii.rtfd.io/
 
 
 def vidas_remanescentes(vidas):
