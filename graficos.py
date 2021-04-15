@@ -6,6 +6,7 @@ Esse módulo tem como objetivo agrupar as funções que imprimem a interface ASC
 
 
 """
+# Grupo: Ana Carolina Erthal Fernandes, Eduardo Adame Salles, Murilo Calegari de Souza, Tiago Barradas Figueiredo, Rodrigo Gomes Hutz Pintucci e Vinícius Hedler
 
 import os
 import estados

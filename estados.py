@@ -5,6 +5,7 @@ Estados
 Esse módulo tem como finalidade armazenar e retornar os estados referentes a quantidade atual de vida remanescente do jogador.
 
 """
+# Grupo: Ana Carolina Erthal Fernandes, Eduardo Adame Salles, Murilo Calegari de Souza, Tiago Barradas Figueiredo, Rodrigo Gomes Hutz Pintucci e Vinícius Hedler
 
 
 def vidas_remanescentes(vidas):

@@ -6,6 +6,9 @@
 Seja bem-vindo a documentação de Forca_ASCII!
 =============================================
 
+Contribuidores: Ana Carolina Erthal Fernandes, Eduardo Adame Salles, Murilo Calegari de Souza, Tiago Barradas Figueiredo, Rodrigo Gomes Hutz Pintucci e Vinícius Hedler
+
+
 Repositório: https://github.com/adamesalles/graficoforcaASCII
 
 .. toctree::
