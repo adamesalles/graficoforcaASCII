@@ -177,5 +177,5 @@ _________________________________________________| |____/___________\\
                           \\___________,,,,/     \\
                                           \\_____/
 """)
-    print(f"Parabéns você adivinhou {palavra_secreta}!!!")
-    input("Aperte enter para continuar")
+    print(f"Parabéns, você adivinhou a palavra {palavra_secreta}!")
+    input("Aperte enter para continuar ")
