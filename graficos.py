@@ -7,6 +7,8 @@ Esse módulo tem como objetivo agrupar as funções que imprimem a interface ASC
 
 """
 # Grupo: Ana Carolina Erthal Fernandes, Eduardo Adame Salles, Murilo Calegari de Souza, Tiago Barradas Figueiredo, Rodrigo Gomes Hutz Pintucci e Vinícius Hedler
+# Documentação Sphinx: https://graficoforcaascii.readthedocs.io/en/latest/
+
 
 import os
 import estados
@@ -142,3 +144,38 @@ def atualizar_erros(letras_erradas):
 
     this.lista_letras_erradas = letras_erradas
     atualizar_tela()
+
+
+def imprimir_vitoria(palavra_secreta):
+    """Atualiza a tela com uma mensagem de vitória.
+
+    :param str palavra_secreta: A palavra adivinhada.
+    """
+    cls()
+    print("""
+                                                 /\\               
+                                _____________    | |                
+                                |x          x|   | |                 
+                                |Você venceu!|   | |      \\  |  |  /           
+                                |x̲__________x̲|   | |   \\  _________  /
+                                                 | |  \\  / -▉ u ▉- \\  /
+_________________________________________________| |____/___________\\
+            / ¬▊.▊\\______________________________| |________         
+            Գ___u̲_/ ___________________________  | |        /| 
+   v       //    \\\\/             /             / | |       / |
+          ///|___|\\\\            /             /  | |__    /  /
+         /// || || \\\\ ________ /             /  /| | /   /  /
+        (_)  || || (_) _______<             /  /____/   /  /
+       /    (_|/|_) / /      /             /           /  /
+      /       /____/ /______/_____________/           /  /
+     /            / /                                /  /
+    /            / /                                /  /
+   /____________/ /________________________________/  /
+   |           /x/                                 | /    v
+   |_________ /_/|_________________________________|/
+                  \\_______                 _____
+                          \\___________,,,,/     \\
+                                          \\_____/
+""")
+    print(f"Parabéns você adivinhou {palavra_secreta}!!!")
+    input("Aperte enter para continuar")

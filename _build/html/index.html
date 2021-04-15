@@ -166,6 +166,7 @@
             
   <div class="section" id="seja-bem-vindo-a-documentacao-de-forca-ascii">
 <h1>Seja bem-vindo a documentação de Forca_ASCII!<a class="headerlink" href="#seja-bem-vindo-a-documentacao-de-forca-ascii" title="Link permanente para este título">¶</a></h1>
+<p>Contribuidores: Ana Carolina Erthal Fernandes, Eduardo Adame Salles, Murilo Calegari de Souza, Tiago Barradas Figueiredo, Rodrigo Gomes Hutz Pintucci e Vinícius Hedler</p>
 <p>Repositório: <a class="reference external" href="https://github.com/adamesalles/graficoforcaASCII">https://github.com/adamesalles/graficoforcaASCII</a></p>
 <div class="toctree-wrapper compound">
 </div>
@@ -228,6 +229,17 @@
 </dd></dl>
 
 <dl class="py function">
+<dt id="graficos.imprimir_vitoria">
+<code class="sig-prename descclassname"><span class="pre">graficos.</span></code><code class="sig-name descname"><span class="pre">imprimir_vitoria</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">palavra_secreta</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#graficos.imprimir_vitoria" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Atualiza a tela com uma mensagem de vitória.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros</dt>
+<dd class="field-odd"><p><strong>palavra_secreta</strong> (<em>str</em>) – A palavra adivinhada.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt id="graficos.inicializar_jogo">
 <code class="sig-prename descclassname"><span class="pre">graficos.</span></code><code class="sig-name descname"><span class="pre">inicializar_jogo</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">palavra_secreta_inicial</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tema</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">print_input</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#graficos.inicializar_jogo" title="Link permanente para esta definição">¶</a></dt>
 <dd><p>Inicializa o jogo para o módulo gráfico dada a palavra_secreta_inicial, resetando as variáveis do módulo.</p>
@@ -277,6 +289,9 @@
 
 
 <span class="sd">&quot;&quot;&quot;</span>
+<span class="c1"># Grupo: Ana Carolina Erthal Fernandes, Eduardo Adame Salles, Murilo Calegari de Souza, Tiago Barradas Figueiredo, Rodrigo Gomes Hutz Pintucci e Vinícius Hedler</span>
+<span class="c1"># Documentação Sphinx: https://graficoforcaascii.readthedocs.io/en/latest/</span>
+
 
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">estados</span>
@@ -412,6 +427,41 @@
 
     <span class="n">this</span><span class="o">.</span><span class="n">lista_letras_erradas</span> <span class="o">=</span> <span class="n">letras_erradas</span>
     <span class="n">atualizar_tela</span><span class="p">()</span>
+
+
+<span class="k">def</span> <span class="nf">imprimir_vitoria</span><span class="p">(</span><span class="n">palavra_secreta</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Atualiza a tela com uma mensagem de vitória.</span>
+
+<span class="sd">    :param str palavra_secreta: A palavra adivinhada.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">cls</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">                                                 /</span><span class="se">\\</span><span class="s2">               </span>
+<span class="s2">                                _____________    | |                </span>
+<span class="s2">                                |x          x|   | |                 </span>
+<span class="s2">                                |Você venceu!|   | |      </span><span class="se">\\</span><span class="s2">  |  |  /           </span>
+<span class="s2">                                |x̲__________x̲|   | |   </span><span class="se">\\</span><span class="s2">  _________  /</span>
+<span class="s2">                                                 | |  </span><span class="se">\\</span><span class="s2">  / -▉ u ▉- </span><span class="se">\\</span><span class="s2">  /</span>
+<span class="s2">_________________________________________________| |____/___________</span><span class="se">\\</span><span class="s2"></span>
+<span class="s2">            / ¬▊.▊</span><span class="se">\\</span><span class="s2">______________________________| |________         </span>
+<span class="s2">            Գ___u̲_/ ___________________________  | |        /| </span>
+<span class="s2">   v       //    </span><span class="se">\\\\</span><span class="s2">/             /             / | |       / |</span>
+<span class="s2">          ///|___|</span><span class="se">\\\\</span><span class="s2">            /             /  | |__    /  /</span>
+<span class="s2">         /// || || </span><span class="se">\\\\</span><span class="s2"> ________ /             /  /| | /   /  /</span>
+<span class="s2">        (_)  || || (_) _______&lt;             /  /____/   /  /</span>
+<span class="s2">       /    (_|/|_) / /      /             /           /  /</span>
+<span class="s2">      /       /____/ /______/_____________/           /  /</span>
+<span class="s2">     /            / /                                /  /</span>
+<span class="s2">    /            / /                                /  /</span>
+<span class="s2">   /____________/ /________________________________/  /</span>
+<span class="s2">   |           /x/                                 | /    v</span>
+<span class="s2">   |_________ /_/|_________________________________|/</span>
+<span class="s2">                  </span><span class="se">\\</span><span class="s2">_______                 _____</span>
+<span class="s2">                          </span><span class="se">\\</span><span class="s2">___________,,,,/     </span><span class="se">\\</span><span class="s2"></span>
+<span class="s2">                                          </span><span class="se">\\</span><span class="s2">_____/</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Parabéns você adivinhou </span><span class="si">{</span><span class="n">palavra_secreta</span><span class="si">}</span><span class="s2">!!!&quot;</span><span class="p">)</span>
+    <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Aperte enter para continuar&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -424,6 +474,8 @@
 <span class="sd">Esse módulo tem como finalidade armazenar e retornar os estados referentes a quantidade atual de vida remanescente do jogador.</span>
 
 <span class="sd">&quot;&quot;&quot;</span>
+<span class="c1"># Grupo: Ana Carolina Erthal Fernandes, Eduardo Adame Salles, Murilo Calegari de Souza, Tiago Barradas Figueiredo, Rodrigo Gomes Hutz Pintucci e Vinícius Hedler</span>
+<span class="c1"># Documentação Sphinx: https://graficoforcaascii.readthedocs.io/en/latest/</span>
 
 
 <span class="k">def</span> <span class="nf">vidas_remanescentes</span><span class="p">(</span><span class="n">vidas</span><span class="p">):</span>
